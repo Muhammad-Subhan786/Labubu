@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$13K to $67K: The Trend Hunter Blueprint | Micro-Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #1a237e;
+      --gold: #d4af37;
+      --white: #fff;
+      --gray: #f5f5f5;
+      --green: #43a047;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--gray);
+      color: var(--blue);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .page {
+      margin-bottom: 2.5rem;
+    }
+    .cover-title {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .subheadline {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 1.2rem;
+    }
+    .chart-img {
+      width: 100%;
+      max-width: 420px;
+      display: block;
+      margin: 1.2rem auto 1.2rem auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      background: var(--gray);
+      padding: 1rem;
+    }
+    .labubu-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      display: block;
+      margin: 0 auto 1rem auto;
+      background: #eee;
+    }
+    .about-us {
+      background: var(--gold);
+      color: var(--blue);
+      border-radius: 10px;
+      padding: 0.7rem 1.2rem;
+      font-size: 1.05rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .testimonial {
+      background: var(--white);
+      border-left: 4px solid var(--gold);
+      font-style: italic;
+      color: #444;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .story-section {
+      margin-bottom: 1.2rem;
+    }
+    .story-section p {
+      margin: 0.2rem 0 0.7rem 0;
+      color: #222;
+      font-size: 1.07rem;
+    }
+    .dashboard-img, .map-img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin: 1rem auto;
+      display: block;
+      background: #eee;
+    }
+    .cta-section {
+      background: var(--gold);
+      color: var(--blue);
+      border-radius: 16px;
+      padding: 2rem 1.2rem 1.5rem 1.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .cta-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .cta-section h3 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 1.2rem;
+    }
+    .benefits {
+      text-align: left;
+      margin: 1.2rem auto 1.2rem auto;
+      max-width: 420px;
+    }
+    .benefits li {
+      margin-bottom: 0.7rem;
+      font-size: 1.07rem;
+      list-style: none;
+      position: relative;
+      padding-left: 1.7em;
+    }
+    .benefits li:before {
+      content: '✔️';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-size: 1.1em;
+    }
+    .cta-btn {
+      background: var(--blue);
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 30px;
+      padding: 1rem 2.5rem;
+      cursor: pointer;
+      margin: 1.2rem 0 0.5rem 0;
+      box-shadow: var(--shadow);
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: #0d133d;
+    }
+    .trust {
+      font-size: 0.98rem;
+      color: #333;
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
+    }
+    .whatsapp-link {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 20px;
+      padding: 0.6rem 1.5rem;
+      text-decoration: none;
+      margin-top: 0.7rem;
+      font-size: 1.07rem;
+      transition: background 0.2s;
+    }
+    .whatsapp-link:hover {
+      background: #128C7E;
+    }
+    /* Lead Magnet Wireframe */
+    .lead-magnet {
+      background: var(--white);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 2rem 1.2rem 1.5rem 1.2rem;
+      margin: 2rem auto 1.5rem auto;
+      max-width: 700px;
+      text-align: center;
+    }
+    .lead-magnet-hero {
+      margin-bottom: 1.5rem;
+    }
+    .lead-magnet-hero h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .lead-magnet-hero h3 {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 1.2rem;
+    }
+    .lead-magnet-hero .cta-btn {
+      margin: 1.2rem 0 1.2rem 0;
+    }
+    .lead-magnet-visuals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+    .lead-magnet-visuals img {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #eee;
+      box-shadow: var(--shadow);
+    }
+    .form-section {
+      background: var(--gray);
+      border-radius: 12px;
+      padding: 1.2rem 1rem;
+      margin: 1.2rem auto 1.2rem auto;
+      max-width: 420px;
+      text-align: left;
+    }
+    .form-section label {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      display: block;
+      color: var(--blue);
+    }
+    .form-section input {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    .form-section .microcopy {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 0.7rem;
+    }
+    .why-download {
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      margin: 1.2rem 0 1.2rem 0;
+      flex-wrap: wrap;
+    }
+    .why-download .icon-bullet {
+      background: var(--gold);
+      color: var(--blue);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      font-size: 1.07rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      min-width: 180px;
+    }
+    .testimonials {
+      margin: 1.2rem 0 1.2rem 0;
+      text-align: left;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .testimonials .testimonial {
+      background: var(--gray);
+      border-left: 4px solid var(--gold);
+      font-style: italic;
+      color: #444;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 0.7rem;
+      font-size: 1.01rem;
+    }
+    .final-cta {
+      margin: 1.5rem 0 0.5rem 0;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.98rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- PAGE 1: The Hook & Before/After Punch -->
+    <div class="page">
+      <div class="cover-title">$13K to $67K in 30 Days: How One Product Transformed a Dead Store — and How Yours Can Too.</div>
+      <div class="subheadline">The step-by-step breakdown of how we spotted Labubu before the trend exploded — so you can do the same.</div>
+      <img src="https://placehold.co/420x180/1a237e/d4af37?text=Before+%2413K+%E2%86%92+After+%2467K+%7C+417%25+ROI" alt="Before/After Chart" class="chart-img" />
+      <img src="https://placehold.co/180x180/eee/1a237e?text=Labubu+Product" alt="Labubu Product" class="labubu-img" />
+      <div class="about-us">Gamma Tech Solutions: The only all-in-one partner for eBay, Walmart, Amazon & Shopify sellers ready to scale.</div>
+      <div class="testimonial">“This single trend covered 6 months of my old profits — and shipped same-day. I’d never seen growth like it.” — Actual Seller</div>
+    </div>
+
+    <!-- PAGE 2: The Story Breakdown -->
+    <div class="page">
+      <div class="section-title">The Struggle</div>
+      <div class="story-section"><p>A store with dead stock. $13K tied up in low-demand inventory. Sales trickling in. Cash flow frozen.</p></div>
+      <div class="section-title">The Move</div>
+      <div class="story-section"><p>Our Trend Hunter Team spotted Labubu — a quirky collectible with a growing cult following. No one else was buying it at scale. We went ALL IN — investing the full $13K.</p></div>
+      <div class="section-title">The Result</div>
+      <div class="story-section"><p>In just 30 days, the same store cleared $67,000 in revenue — with 417% ROI. Fulfillment handled same-day by our partner 3PL network, zero missed orders, happy buyers.</p></div>
+      <div class="section-title">The Lesson</div>
+      <div class="story-section"><p>Trends don’t wait. Most sellers miss the early window. Our Trend Hunter Program puts you ahead — tested products, proven ROI, and same-day fulfillment so you can scale risk-free.</p></div>
+      <img src="https://placehold.co/340x120/eee/1a237e?text=Sales+Dashboard+Screenshot" alt="Sales Dashboard" class="dashboard-img" />
+      <img src="https://placehold.co/340x120/eee/1a237e?text=USA+%26+UAE+Warehouses+Map" alt="Warehouse Map" class="map-img" />
+    </div>
+
+    <!-- PAGE 3: Your Call-to-Action Page -->
+    <div class="cta-section">
+      <h2>Want Us to Find Your Next $67K Product?</h2>
+      <h3>Join our exclusive Trend Hunter Program & get early access to the next winning products — tested, stocked, and ready to ship same-day.</h3>
+      <ul class="benefits">
+        <li>Verified high-ROI products tested in real marketplaces</li>
+        <li>Fast-track your store with same-day or 1-day shipping</li>
+        <li>Dedicated VA team to handle orders, listings, and support</li>
+      </ul>
+      <button class="cta-btn">CHAT WITH A TREND HUNTER NOW</button>
+      <div class="trust">Limited slots. Once the trend wave starts, it’s too late.</div>
+      <a class="whatsapp-link" href="https://wa.me/15551234567" target="_blank">👉 Click here to WhatsApp our team instantly.</a>
+    </div>
+  </div>
+
+  <!-- LEAD MAGNET LANDING PAGE WIREFRAME -->
+  <div class="lead-magnet">
+    <div class="lead-magnet-hero">
+      <h2>How We Turned $13K into $67K with One Viral Product — Want The Blueprint?</h2>
+      <h3>Download our free micro-case study and discover how to spot the next trend — before your competition does.</h3>
+      <button class="cta-btn">YES! SEND ME THE FREE CASE STUDY</button>
+      <div class="lead-magnet-visuals">
+        <img src="https://placehold.co/160x120/1a237e/d4af37?text=Case+Study+Cover" alt="Case Study Cover" />
+        <img src="https://placehold.co/160x120/eee/1a237e?text=ROI+Screenshot" alt="ROI Screenshot" />
+      </div>
+    </div>
+    <form class="form-section">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="store">Store URL (optional)</label>
+      <input type="text" id="store" name="store">
+      <label for="marketplaces">Marketplaces you sell on (optional)</label>
+      <input type="text" id="marketplaces" name="marketplaces">
+      <div class="microcopy">No spam ever — just proven strategies for serious sellers.</div>
+      <button class="cta-btn" type="submit">Unlock Your Next Winning Product — Download Now</button>
+    </form>
+    <div class="why-download">
+      <div class="icon-bullet">📈 417% ROI in 30 Days</div>
+      <div class="icon-bullet">🚀 Real Tested Product Example</div>
+      <div class="icon-bullet">💰 Insider Trend Spotting Secrets</div>
+    </div>
+    <div class="testimonials">
+      <div class="testimonial">“I never guessed how big early trends could be until I saw Gamma Tech’s picks.”</div>
+      <div class="testimonial">“Gamma Tech’s Trend Hunter program is a game changer for serious sellers.”</div>
+    </div>
+    <div class="final-cta">
+      <button class="cta-btn">Unlock Your Next Winning Product — Download Now</button>
+      <div class="trust">Limited time: Next trend drop closes soon.</div>
+    </div>
+  </div>
+  <div class="footer">Gamma Tech Solutions — Your One-Stop Partner for E-Commerce Scale.</div>
+</body>
+</html> 
